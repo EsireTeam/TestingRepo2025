@@ -35,7 +35,7 @@ class DropinController extends Controller
    {
         $this->middleware('auth')->except(['Test','getLabelsId']);
 
-        $this->middleware('auth')->except(['Test','getLabelsId','HelpOne']);
+        $this->middleware('auth')->except(['Test','getLabelsId','HelpOne','BugbotErrorThree']);
    }
 
    public function index()
