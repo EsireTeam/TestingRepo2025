@@ -133,189 +133,133 @@
             .header-bar .center-controls {order:3; margin-top:10px;}
             .header-bar .right-controls {order:2; justify-content:flex-end; width:100%;}
             .header-bar .left-controls {order:1; width:100%;}
+
         }
     </style>
 </head>
 <body>
-    <header class="header-bar">
-        <div class="left-controls">
-            <input type="text" placeholder="Search Order" />
-            <button class="btn">Report Issue</button>
-        </div>
-        <div class="center-controls">
-            <button class="btn orange"><i class="fas fa-comment-dots"></i> Give a Feedback to This Page</button>
-        </div>
-        <div class="right-controls">
-            <span class="timestamp">Updated: Fri, Aug 2025 12:34 PM</span>
-            <button class="btn yellow"><i class="fas fa-sync"></i> Refresh Statistics</button>
-            <div class="user">
-                <img src="https://via.placeholder.com/40" alt="Avatar" style="border-radius:50%;" />
-                <span>A.R. Siddiqui</span>
-            </div>
-        </div>
+
+    <header>
+        <h1>Leather Jacket Co. Supply Chain Dashboard</h1>
     </header>
+    <div class="container">
+        <div class="cards">
+            <div class="card">
+                <h3>Inventory</h3>
+                <p>1,250 Jackets in Stock</p>
+            </div>
+            <div class="card">
+                <h3>Pending Orders</h3>
+                <p>320 Orders Awaiting Fulfillment</p>
+            </div>
+            <div class="card">
+                <h3>Shipments</h3>
+                <p>45 Shipments In Transit</p>
+            </div>
+            <div class="card">
+                <h3>Suppliers</h3>
+                <p>12 Active Suppliers</p>
+            </div>
+        </div>
 
-    <nav class="top-nav">
-        <button class="nav-btn">Orders With Other Teams Excel</button>
-        <button class="nav-btn">Bulk InQC Excel (1092)</button>
-        <button class="nav-btn">Alteration (102)</button>
-        <button class="nav-btn">Packing Info Excel</button>
-        <button class="nav-btn">Master Active Skus</button>
-        <button class="nav-btn">Master Discarded Skus</button>
-        <button class="nav-btn">Child Active Skus</button>
-        <button class="nav-btn">Today All Orders</button>
-        <button class="nav-btn">Last 7 Days InQC Completed (2420)</button>
-        <button class="nav-btn">Wax List (10)</button>
-        <button class="nav-btn">Hub Stock (14553)</button>
-        <button class="nav-btn">Supplier (Pri, Sec, Ter)</button>
-        <button class="nav-btn red">Hub Out Of Stock</button>
-    </nav>
+        <div class="section">
+            <h2>Inventory Details</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>SKU</th>
+                        <th>Stock</th>
+                        <th>Warehouse</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Classic Black Jacket</td>
+                        <td>LBJ-001</td>
+                        <td>450</td>
+                        <td>North Facility</td>
+                    </tr>
+                    <tr>
+                        <td>Brown Vintage Jacket</td>
+                        <td>LBJ-002</td>
+                        <td>300</td>
+                        <td>East Facility</td>
+                    </tr>
+                    <tr>
+                        <td>Suede Bomber Jacket</td>
+                        <td>LBJ-003</td>
+                        <td>200</td>
+                        <td>West Facility</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-    <main class="main-content">
-        <section class="status-cards">
-            <h2>Esire Team Statistics</h2>
-            <div class="status-grid">
-                <div class="column">
-                    <div class="status-badge green">
-                        <div class="label"><i class="fas fa-spinner"></i>In Process</div>
-                        <span class="count">475</span>
-                    </div>
-                    <div class="status-badge orange">
-                        <div class="label"><i class="fas fa-clipboard-check"></i>In QC</div>
-                        <span class="count">163</span>
-                    </div>
-                    <div class="status-badge red">
-                        <div class="label"><i class="fas fa-exclamation-circle"></i>Urgent</div>
-                        <span class="count">124</span>
-                    </div>
-                    <div class="status-badge purple">
-                        <div class="label"><i class="fas fa-pause-circle"></i>Packing-Hold</div>
-                        <span class="count">17</span>
-                    </div>
-                    <div class="status-badge grey">
-                        <div class="label"><i class="fas fa-warehouse"></i>Orders Auto Reserved For MCF</div>
-                        <span class="count">0</span>
-                    </div>
-                    <div class="status-badge grey">
-                        <div class="label"><i class="fas fa-gem"></i>LUXE Item Orders</div>
-                        <span class="count">0</span>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="status-badge pink">
-                        <div class="label"><i class="fas fa-edit"></i>Alter Given</div>
-                        <span class="count">8</span>
-                    </div>
-                    <div class="status-badge teal">
-                        <div class="label"><i class="fas fa-clock"></i>Pending for Reservation</div>
-                        <span class="count">10</span>
-                    </div>
-                    <div class="status-badge orange">
-                        <div class="label"><i class="fas fa-hourglass-half"></i>Delayed</div>
-                        <span class="count">43</span>
-                    </div>
-                    <div class="status-badge green">
-                        <div class="label"><i class="fas fa-box"></i>Packing</div>
-                        <span class="count">18</span>
-                    </div>
-                    <div class="status-badge grey">
-                        <div class="label"><i class="fas fa-warehouse"></i>Hub Stock (release for reason)</div>
-                        <span class="count">9</span>
-                    </div>
-                    <div class="status-badge pink">
-                        <div class="label"><i class="fas fa-ban"></i>Blacklist Hold-On Orders</div>
-                        <span class="count">3</span>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <div class="section">
+            <h2>Upcoming Shipments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Shipment ID</th>
+                        <th>Destination</th>
+                        <th>Status</th>
+                        <th>ETA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>SHP-101</td>
+                        <td>New York</td>
+                        <td>In Transit</td>
+                        <td>2 days</td>
+                    </tr>
+                    <tr>
+                        <td>SHP-102</td>
+                        <td>Los Angeles</td>
+                        <td>Pending Pickup</td>
+                        <td>5 days</td>
+                    </tr>
+                    <tr>
+                        <td>SHP-103</td>
+                        <td>Chicago</td>
+                        <td>Delivered</td>
+                        <td>—</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
-        <section class="other-cards card-grid">
-            <div class="card blue">
-                <div class="label"><i class="fas fa-dolly"></i>Warehouse PO</div>
-                <span class="count">41</span>
-            </div>
-            <div class="card blue">
-                <div class="label"><i class="fas fa-file-alt"></i>PO Issued</div>
-                <span class="count">253</span>
-            </div>
-            <div class="card pink">
-                <div class="label"><i class="fas fa-search-location"></i>Awaiting Tracking</div>
-                <span class="count">116</span>
-            </div>
-            <div class="card orange">
-                <div class="label"><i class="fas fa-hand-paper"></i>Hold-On</div>
-                <span class="count">62</span>
-            </div>
-            <div class="card teal">
-                <div class="label"><i class="fas fa-shipping-fast"></i>Fast Shipping Orders</div>
-                <span class="count">13</span>
-            </div>
-        </section>
+        <div class="section">
+            <h2>Supplier Performance</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Supplier</th>
+                        <th>On-Time %</th>
+                        <th>Quality Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alpha Leather</td>
+                        <td>98%</td>
+                        <td>4.8/5</td>
+                    </tr>
+                    <tr>
+                        <td>Urban Tanners</td>
+                        <td>92%</td>
+                        <td>4.4/5</td>
+                    </tr>
+                    <tr>
+                        <td>Heritage Hides</td>
+                        <td>89%</td>
+                        <td>4.2/5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-        <section class="awd-section">
-            <h2>AWD (Amazon Warehousing and Distribution)</h2>
-            <div class="card-grid">
-                <div class="card purple">
-                    <div class="label"><i class="fas fa-boxes"></i>Case-Packs Recommended</div>
-                    <span class="count">42</span>
-                </div>
-                <div class="card grey">
-                    <div class="label"><i class="fas fa-building"></i>Case-Packs Created / In Head Office</div>
-                    <span class="count">0</span>
-                </div>
-                <div class="card teal">
-                    <div class="label"><i class="fas fa-home"></i>Case-Packs available In House 3</div>
-                    <span class="count">6</span>
-                </div>
-                <div class="card grey">
-                    <div class="label"><i class="fas fa-box-open"></i>InComplete Case-Packs Found In House 3</div>
-                    <span class="count">0</span>
-                </div>
-                <div class="card grey">
-                    <div class="label"><i class="fas fa-truck-loading"></i>Shipments In Process</div>
-                    <span class="count">0</span>
-                </div>
-                <div class="card grey">
-                    <div class="label"><i class="fas fa-clipboard-list"></i>Case-Packs Required for Shipment</div>
-                    <span class="count">0</span>
-                </div>
-                <div class="card grey">
-                    <div class="label"><i class="fas fa-barcode"></i>Case-Packs Scanned In Shipments</div>
-                    <span class="count">0</span>
-                </div>
-            </div>
-        </section>
-
-        <section class="audit-section">
-            <h2>System Audit</h2>
-            <div class="card-grid">
-                <div class="card purple">
-                    <div class="label"><i class="fas fa-warehouse"></i>Hub Stock With Status Team. Age</div>
-                    <span class="count">5266</span>
-                </div>
-                <div class="card purple">
-                    <div class="label"><i class="fas fa-calendar-times"></i>Activity Not Performed After Drop-In (90 Days)</div>
-                    <span class="count">76</span>
-                </div>
-                <div class="card grey">
-                    <div class="label"><i class="fas fa-calendar-times"></i>Activity Not Performed After Packing (90 Days)</div>
-                    <span class="count">0</span>
-                </div>
-                <div class="card purple">
-                    <div class="label"><i class="fas fa-calendar-times"></i>Activity Not Performed After Hub Receiving (90 Days)</div>
-                    <span class="count">471</span>
-                </div>
-                <div class="card grey">
-                    <div class="label"><i class="fas fa-calendar-times"></i>Activity Not Performed After Hub Release (90 Days)</div>
-                    <span class="count">0</span>
-                </div>
-                <div class="card purple">
-                    <div class="label"><i class="fas fa-barcode"></i>Need to Change Barcode</div>
-                    <span class="count">3</span>
-                </div>
-            </div>
-        </section>
-    </main>
 </body>
 </html>
