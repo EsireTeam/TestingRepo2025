@@ -3,9 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Supply Chain Dashboard</title>
+    <style>
+        body {font-family: Arial, sans-serif; margin: 0; background: #f4f4f4;}
+        header {background: #333; color: #fff; padding: 20px; text-align: center;}
+        .container {padding: 20px;}
+        .cards {display: flex; flex-wrap: wrap; gap: 20px;}
+        .card {background: #fff; border-radius: 8px; padding: 20px; flex: 1; min-width: 200px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);}
+        th, td {padding: 10px; border: 1px solid #ddd; text-align: left;}
+        th {background: #333; color: #fff;}
+    </style>
 </head>
 <body>
-    
+    <header>
+        <h1>Leather Jackets Supply Chain Dashboard</h1>
+    </header>
+    <div class="container">
+        <section class="cards">
+            <div class="card">
+                <h2>Inventory</h2>
+                <p>1200 jackets</p>
+            </div>
+            <div class="card">
+                <h2>Pending Orders</h2>
+                <p>150 orders</p>
+            </div>
+            <div class="card">
+                <h2>Shipments in Transit</h2>
+                <p>35 shipments</p>
+            </div>
+        </section>
+        <section>
+            <h2>Inventory by Style</h2>
+            <table>
+                <tr><th>Style</th><th>Quantity</th><th>Warehouse</th></tr>
+                <tr><td>Classic Black</td><td>400</td><td>NYC</td></tr>
+                <tr><td>Vintage Brown</td><td>300</td><td>LA</td></tr>
+                <tr><td>Biker Red</td><td>500</td><td>Chicago</td></tr>
+            </table>
+        </section>
+        <section>
+            <h2>Supplier Performance</h2>
+            <table>
+                <tr><th>Supplier</th><th>On-Time Delivery</th><th>Quality Score</th></tr>
+                <tr><td>Alpha Leather</td><td>95%</td><td>A</td></tr>
+                <tr><td>Urban Tannery</td><td>88%</td><td>B+</td></tr>
+            </table>
+        </section>
+    </div>
 </body>
 </html>
